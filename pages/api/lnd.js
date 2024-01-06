@@ -19,7 +19,7 @@ export default async function handler(req, res) {
           },
          // this is to disable SSL verification for the LND cert locally
          // be sure to remove this in production  
-         httpsAgent: agent
+        //  httpsAgent: agent
       });
 
       res.status(200).json(response.data.payment_request);
